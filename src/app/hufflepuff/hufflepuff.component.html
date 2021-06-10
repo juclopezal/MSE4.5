@@ -1,0 +1,42 @@
+<div *ngFor="let characters of character; let i=index; last as last">
+    <div *ngIf="characters" class="animate__animated animate__zoomIn animate__slow" style= "margin-left: 20px; margin-right: 20px; margin-top: 20px;">
+       
+        <div class="card text-white bg-dark mb-3">
+            <div class="card-body"> 
+                <div class="row">
+                 <div class="col">
+                     
+                    <h5 class="card-title" style="font-size: x-large"><b>Name</b>: {{ characters.name }}</h5>
+                    <p class="card-text" style="font-size: large"><b>Specie</b>: {{ characters.species }}</p>
+                    <p class="card-text" style="font-size: large"><b>Ancestry</b>: {{ characters.ancestry }}</p>
+                    <p class="card-text" style="font-size: large"><b>Patronus</b>: {{ characters.patronus }}</p>
+                    <p class="card-text" style="font-size: large"><b>Actor/Actress</b>: {{ characters.actor }}</p>
+                  </div>
+                  <div class="col">
+                    <p class="card-text"> <img [src]="characters.image" style="width:100px">
+                </div>
+                </div>
+                  
+            </div>
+            
+            <div class="card-footer">
+                <div class="row">
+                    <div class="col">
+                      <a [routerLink]="['']" class="btn btn-outline-dark btn-warning" color="#9b0e0e" >Regresar</a>
+                    </div>
+                    <div class="col">
+                <p style="text-align: left"> {{i+1}} / {{cantidadR}}</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+      </div>
+      
+</div>
+    
+
+       
+    
+    

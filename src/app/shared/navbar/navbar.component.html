@@ -1,0 +1,40 @@
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" [routerLink]="['']">
+        <img src="assets/img/harrypotter_gold.png" height="40" class="d-inline-block align-top" alt="" loading="lazy">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item" routerLinkActive="active">
+                <a class="nav-link" color="000000f" [routerLink]="['gryffindor']">
+                    <i class="fas fa-home"></i> Gryffindor
+                </a>
+            </li>
+            <li class="nav-item" routerLinkActive="active">
+                <a class="nav-link" [routerLink]="['slytherin']">
+                    <i class="fas fa-users"></i> Slytherin
+                </a>
+            </li>
+            <li class="nav-item" routerLinkActive="active">
+                <a class="nav-link" [routerLink]="['hufflepuff']">
+                    <i class="fas fa-magic"></i> Hufflepuff
+                </a>
+            </li>
+            <li class="nav-item" routerLinkActive="active">
+                <a class="nav-link" [routerLink]="['ravenclaw']">
+                    <i class="fas fa-magic"></i> Ravenclaw
+                </a>
+            </li>
+            <li class="nav-item" routerLinkActive="active">
+                <a class="nav-link" [routerLink]="['Search']">
+                    <i class="fas fa-magic"></i> Search
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>

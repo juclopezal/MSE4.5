@@ -1,0 +1,24 @@
+
+<div class="page-container">
+    <app-header></app-header>
+  </div>
+  <router-outlet></router-outlet>
+  
+  <br>
+  <br>
+  <br>
+
+
+  <div class="card text-white bg-dark mb-3; text-align: center; "   
+  style= "margin-left: 120px; margin-right: 120px; margin-top: 20px;"
+  *ngIf="show" >
+<br><p>¡Hola!. Esta es la base de datos del Colegio Hogwarts de Magia y 
+    Hechicería, en la parte de arriba encontrarás los enlaces de las casas del colegio y también una zona
+     búsqueda ya que en el caso de que no sepas dónde se enccuentra el personae que quieres buscar, 
+     lo encuentres fácilemente en nuestra zona de busqueda. </p>
+  </div>
+  <div>
+    <button class="btn btn-dark" (click)="show=!show" 
+    style= "margin-left: 480px; margin-right: 420px; margin-top: 20px;">Mostrar/Ocultar mensaje</button>
+  </div>
+
